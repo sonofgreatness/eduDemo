@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">eduDemo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="type">Type</string>
+    <string name="type_of_feedback">type of feedback</string>
+    <string name="project_abstract">Abstract</string>
+    <string name="don_t_rest_on_your_laurels">Don\'t rest on your laurels..</string>
+    <string name="laurels_pic_descr">color_rich_picture_of_laurels</string>
+    <string name="donate_5_szl">Donate 5 SZL</string>
+    <string name="research_project">research project</string>
+    <string name="project_title">Factors Influencing Teaching  And \n Learning Computer Programming in Higher Institutions in Eswatini   </string>
+    <string name="channel_name">invite_user_channel</string>
+    <string name="channel_description">noticatations channel to invite users</string>
+    <string name="snooze">snoozer</string>
+    <string name="snoozer">extrdition</string>
+    <string name="your_progress_so_far">Your Progress So Far</string>
+</resources>

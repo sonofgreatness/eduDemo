@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.settings.Settings">
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        android:id = "@+id/settings_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<TextView
+    android:id = "@+id/settings_headerText1"
+    android:text="ACCOUNTS"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+        <TextView
+            android:id = "@+id/editprofile_text"
+            android:text="EditProfile"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id = "@+id/changepassword_text"
+            android:text="Change Password"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id = "@+id/managelibrary_text"
+            android:text="Delete Account"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id = "@+id/delete_account_text"
+            android:text="Manage Library"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id = "@+id/settings_headerText2"
+            android:text="MOBILE_DATA MANAGEMENT"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/wifi_toggle_text"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Keep WIFI ON while on this app"
+                app:layout_constraintHorizontal_weight="0.82"
+                tools:ignore="MissingConstraints"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/wifi_toggle_text"
+                tools:ignore="MissingConstraints"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id = "@+id/theme_chooser_text"
+            android:text="Manage Library"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mobile_data_toggle_text"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Keep WIFI ON while on this app"
+                app:layout_constraintHorizontal_weight="0.82"
+                tools:ignore="MissingConstraints"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/mobile_data_toggle_text"
+                tools:ignore="MissingConstraints"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/location_toggle_text"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="Keep WIFI ON while on this app"
+                app:layout_constraintHorizontal_weight="0.82"
+                tools:ignore="MissingConstraints"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/location_toggle_text"
+                tools:ignore="MissingConstraints"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id = "@+id/privacy_policy_text"
+            android:text="Manage Library"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</FrameLayout>

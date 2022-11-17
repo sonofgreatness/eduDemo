@@ -1,0 +1,10 @@
+/*************************THE NOTIFICATIONS FEATURE ****************************/
+/*==================REQUIREMENTS===============================================*/
+/* 1 system much check if user has finished all tasks..
+*   if user has finished ALL tasks -> DO NOT SEND NOTIFICATION
+*    else if user han Not finished ALL  tasks ->  SEND NOTIFICATION
+*2. NOTFICATON - must be a text = "YOU HAVE $x LESSONS   TO GO, Get your certificate"
+*              - 2 buttons , 1 to cancel  1 to Deeplink user to Quizzer Fragment
+*                - must be sent every 17 hours
+*3
+/

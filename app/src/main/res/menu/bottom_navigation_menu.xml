@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aboutProject"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="About"
+        />
+    <!--
+    <item
+        android:id="@+id/Library"
+        android:enabled="true"
+        android:icon="@drawable/bookshelf"
+        android:title="Library"/>
+        -->
+    <item
+        android:id="@+id/Class"
+        android:enabled="true"
+        android:icon="@drawable/graduated"
+        android:title="Class"/>
+ <!--
+   <item
+        android:id="@+id/topQuestions"
+        android:enabled="true"
+        android:icon="@drawable/search_reloader_icon"
+        android:title="Top Searches"/>
+    <item
+        android:id="@+id/userProfileFragment"
+        android:enabled="true"
+        android:icon="@drawable/person_icon"
+        android:title="Profile"/>
+        -->
+</menu>

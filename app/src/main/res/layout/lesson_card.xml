@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="35dp"
+    android:elevation="7dp"
+    android:padding="12dp"
+    android:id ="@+id/lesson_card"
+    android:background="@color/lazy_gray"
+    >
+    <RelativeLayout
+        android:background="@drawable/oval_rectangle"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="35dp"
+        >
+        <ImageView
+            android:id="@+id/quizzer_rv_item_lesson_start_icon"
+            android:layout_width="72dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bookmarker"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            style="@style/white_text"
+            android:id="@+id/lesson_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/quizzer_rv_item_lesson_start_icon"
+            android:alpha="0.45"
+            android:text="Lesson" />
+
+        <TextView
+            style="@style/white_text"
+            android:id="@+id/quizzer_rv_item_lesson_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lesson_text"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="71dp"
+            android:layout_toRightOf="@id/quizzer_rv_item_lesson_start_icon"
+            android:text="Lessonzzzzzz" />
+        <ImageView
+            android:id="@+id/quizzer_rv_item_lesson_end_icon"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="240dp"
+            android:visibility="gone"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/nice_light_green"
+            android:layout_below="@+id/quizzer_rv_item_lesson_start_icon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="35dp"
+            android:text="Learn"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

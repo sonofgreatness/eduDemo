@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_is"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.rate_us.RateUsFragment">
+
+    <Button
+        android:id="@+id/top_part_fundus_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        tools:layout_editor_absoluteX="0dp"></Button>
+
+    <RelativeLayout
+        android:id = "@+id/top_top_part_fundus_fragment"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        app:layout_constraintBottom_toTopOf = "@id/top_part_fundus_fragment"
+        app:layout_constraintTop_toTopOf = "parent">
+        <ImageView
+            android:id= "@+id/asking_for_money_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Icon to prompt user to give money">
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id = "@+id/bottom_part_fundus_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_part_fundus_fragment"
+        >
+
+        <TextView
+            android:id="@+id/fundus_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/croissant_one"
+            android:text="@string/don_t_rest_on_your_laurels"
+            android:textColor="#143915"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/fundus_support_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fundus_header_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/chakra_petch_bold"
+            android:text="@string/donate_5_szl"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/fundus_laurels_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fundus_support_text"
+            android:contentDescription="@string/laurels_pic_descr"
+            android:src="@drawable/laurel_rose"></ImageView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

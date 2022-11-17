@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+   <!--     <item
+            android:id="@+id/rateUsFragment"
+            android:title="Fund Research"
+            android:icon="@drawable/money_bag"/>
+
+            -->
+        <item
+            android:id="@+id/userProgress"
+            android:title="My Progress"
+            android:icon= "@drawable/graphic_progression"/>
+
+        <item
+            android:id="@+id/inviteFragment"
+            android:title="Invite Friend"
+            android:icon= "@drawable/add_icon"/>
+   <!--
+        <item
+            android:id="@+id/feedBackFragment"
+            android:title="Give Us FeedBack"
+            android:icon="@drawable/feedback"/>
+-->
+
+    </group>
+</menu>

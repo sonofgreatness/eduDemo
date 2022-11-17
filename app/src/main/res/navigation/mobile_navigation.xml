@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/Class">
+
+    <fragment
+        android:id="@+id/aboutProject"
+        android:name="com.example.edudemo.ui.about.AboutProject"
+        android:label="fragment_about_project"
+        tools:layout="@layout/fragment_about_project" />
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.example.edudemo.ui.feedback.FeedBackFragment"
+        android:label="fragment_feed_back"
+        tools:layout="@layout/fragment_feed_back" />
+    <fragment
+        android:id="@+id/inviteFragment"
+        android:name="com.example.edudemo.ui.Invite.InviteFragment"
+        android:label="fragment_invite"
+        tools:layout="@layout/fragment_invite" />
+    <fragment
+        android:id="@+id/Library"
+        android:name="com.example.edudemo.ui.library.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/Class"
+        android:name="com.example.edudemo.ui.quizzer.QuizzerFragment"
+        android:label="fragment_quizzer"
+        tools:layout="@layout/fragment_quizzer" >
+        <action
+            android:id="@+id/action_quizzerFragment_to_tutorial"
+            app:destination="@id/tutorial" >
+        <argument
+            android:name="lesson"
+            app:argType="com.example.edudemo.data.local.courses.Lesson"
+            app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/rateUsFragment"
+        android:name="com.example.edudemo.ui.rate_us.RateUsFragment"
+        android:label="fragment_rate_us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/topQuestions"
+        android:name="com.example.edudemo.ui.stackoverflowutilizer.stackoverflow_harvester"
+        android:label="fragment_stackoverflow_harvester"
+        tools:layout="@layout/fragment_stackoverflow_harvester" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.edudemo.ui.settings.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.edudemo.ui.profile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/userProgress"
+        android:name="com.example.edudemo.ui.userprogress.UserProgress"
+        android:label="fragment_user_progress"
+        tools:layout="@layout/fragment_user_progress" />
+    <fragment
+        android:id="@+id/question"
+        android:name="com.example.edudemo.ui.quizzer.question"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_question_to_tutorial"
+            app:destination="@id/tutorial"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_question_to_quizzerFragment"
+            app:destination="@id/Class"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/Class" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/tutorial"
+        android:name="com.example.edudemo.ui.quizzer.tutorial"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" >
+        <action
+            android:id="@+id/action_tutorial_to_quizzerFragment"
+            app:destination="@id/Class"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/Class" />
+        <action
+            android:id="@+id/action_tutorial_to_question"
+            app:destination="@id/question"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left">
+
+        </action>
+
+    </fragment>
+</navigation>
